@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --dark-blue: #03045e;
+  --dark-brown: #474306;
+  --yellow: #f5ee84;
+  --light-yellow: #fbf8cc;
+}
+body {
+  font-family: "Poppins";
+  background-color: var(--light-yellow);
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  color: var(--dark-blue);
+  font-size: 1.5rem;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.nav-item {
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item a {
+  text-decoration: none;
+}
+
+.nav-icon {
+  display: flex;
+  justify-content: space-between;
+  max-width: 150px;
+  width: 100%;
+  align-items: center;
+}
+
+/* Hero */
+.image-container {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 50px;
+}
+
+.profile-image {
+border-radius: 50%;
+height: 400px;
+width: 400px;
+object-fit: cover;
+}
+
+.hero {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero span {
+  color: #007bff;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+.hero h2 {
+  margin: 10px 0;
+  font-weight: normal;
+}
+
+.btn {
+  margin-top: 15px;
+  padding: 10px 25px;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Sections */
+.section {
+  padding: 30px 10%;
+}
+
+.section h3 {
+  margin-bottom: 8px;
+}
+
+/* Skills */
+.skills span {
+  display: inline-block;
+  background: #eee;
+  padding: 4px 12px;
+  margin: 6px;
+  border-radius: 5px;
+}
+
+/* Cards */
+.card {
+  background: #f5f5f5;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+/* Contact */
+.contact-form {
+  max-width: 400px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  border: none;
+  color: #fff;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: #111;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
